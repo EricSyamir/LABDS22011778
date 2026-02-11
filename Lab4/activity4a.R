@@ -1,0 +1,57 @@
+data <- c("East", "West", "East", "North", "North", "East", "West", "West", "West", "East", "North")
+print(data)
+print(is.factor(data))
+factor_data <- factor(data)
+print(factor_data)
+print(is.factor(factor_data))
+length(factor_data)
+
+data <- factor(c("East", "West", "East", "North", "North", "East", "West", "West", "West", "East", "North"))
+data[3]
+
+data <- c("East", "West", "East", "North", "North", "East", "West", "West", "West", "East", "North")
+factor_data <- factor(data)
+print(factor_data)
+new_order_data <- factor(factor_data, levels = c("East", "West", "North"))
+print(new_order_data)
+
+v <- gl(3, 4, labels = c("Tampa", "Seattle", "Boston"))
+print(v)
+
+M <- matrix(c(3:14), nrow = 4, byrow = TRUE)
+print(M)
+N <- matrix(c(3:14), nrow = 4, byrow = FALSE)
+print(N)
+rownames <- c("row1", "row2", "row3", "row4")
+colnames <- c("col1", "col2", "col3")
+P <- matrix(c(3:14), nrow = 4, byrow = TRUE, dimnames = list(rownames, colnames))
+print(P)
+
+print(P[1, 3])
+print(P[4, 2])
+print(P[2, ])
+print(P[, 3])
+
+matrix1 <- matrix(c(3, 9, -1, 4, 2, 6), nrow = 2)
+matrix2 <- matrix(c(5, 2, 0, 9, 3, 4), nrow = 2)
+print(matrix1 + matrix2)
+print(matrix1 - matrix2)
+print(matrix1 * matrix2)
+print(matrix1 / matrix2)
+
+vector1 <- c(5, 9, 3)
+vector2 <- c(10, 11, 12, 13, 14, 15)
+result <- array(c(vector1, vector2), dim = c(3, 3, 2))
+print(result)
+
+column.names <- c("COL1", "COL2", "COL3")
+row.names <- c("ROW1", "ROW2", "ROW3")
+matrix.names <- c("Matrix1", "Matrix2")
+result <- array(c(vector1, vector2), dim = c(3, 3, 2), dimnames = list(row.names, column.names, matrix.names))
+print(result[3, , 2])
+print(result[1, 3, 1])
+print(result[, , 2])
+
+new.array <- array(c(vector1, vector2), dim = c(3, 3, 2))
+result <- apply(new.array, c(1), sum)
+print(result)
