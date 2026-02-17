@@ -1,0 +1,57 @@
+================================================================================
+                              DATA CLEANING REPORT                              
+================================================================================
+
+EXECUTIVE SUMMARY
+--------------------------------------------------------------------------------
+Original Records: 47
+Cleaned Records: 40
+Records Removed: 7
+Retention Rate: 85.11%
+Data Quality Score (Before): 61.02/100
+
+MISSING VALUES ANALYSIS (Before Cleaning)
+--------------------------------------------------------------------------------
+Student_ID               :    1 missing ( 2.13%)
+Last_Name                :    1 missing ( 2.13%)
+Gender                   :    1 missing ( 2.13%)
+Enrollment_Date          :    5 missing (10.64%)
+Total_Payments           :    1 missing ( 2.13%)
+
+DUPLICATE ANALYSIS
+--------------------------------------------------------------------------------
+Duplicate Rows: 9
+Duplicate Student IDs: 88
+
+DATA TYPES
+--------------------------------------------------------------------------------
+Student_ID               : float64
+First_Name               : str
+Last_Name                : str
+Age                      : float64
+Gender                   : str
+Course                   : str
+Enrollment_Date          : datetime64[us]
+Total_Payments           : float64
+
+CLEANING ACTIONS PERFORMED
+--------------------------------------------------------------------------------
+1. Parsed messy data formats (pipe-delimited and comma-delimited)
+2. Cleaned currency values (removed symbols, commas, spaces)
+3. Extracted and validated ages
+4. Standardized gender values (M/F)
+5. Normalized course names
+6. Parsed dates from multiple formats
+7. Removed duplicate rows
+8. Removed duplicate Student IDs (kept first occurrence)
+9. Removed all records with missing/null values
+
+FINAL DATASET STATUS
+--------------------------------------------------------------------------------
+Total Records: 40
+Total Columns: 8
+Missing Values: 0
+Duplicate Rows: 0
+
+================================================================================
+Report generated successfully.
