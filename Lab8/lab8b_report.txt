@@ -1,0 +1,21 @@
+LAB 8b - Visualization Supported Report
+======================================
+
+Dataset: Student score data (from Lab6/question4.R)
+Rows: 8 | Columns: 4
+
+Summary:
+- Qualification rate: 50% qualified
+- Average score: 12.56
+- Average attempts: 1.88
+
+Top 3 scorers:
+1) Jonas (19)
+2) Michael (16.5)
+3) Emily (14.5)
+
+Visual evidence saved as PNG:
+- lab8b_bar_scores.png (bar chart)
+- lab8b_boxplot_score_by_qualify.png (box plot)
+- lab8b_scatter_attempts_vs_score.png (scatter plot)
+
